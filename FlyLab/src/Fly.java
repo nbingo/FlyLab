@@ -28,8 +28,12 @@ public class Fly
 		gender    = g;
 	}
 	
+	public Fly(Gender g)
+	{
+		this(Bristle.Wild, Color.RED, Color.ORANGE, Antenna.Wild, EyeShape.Wild, WingSize.Wild, WingShape.Wild, WingVein.Wild, WingAngle.Wild, g);
+	}
 	public Fly()
 	{
-		this(Bristle.Wild, Color.RED, Color.ORANGE, Antenna.Wild, EyeShape.Wild, WingSize.Wild, WingShape.Wild, WingVein.Wild, WingAngle.Wild, Gender.Female);
+		this(Gender.Female);
 	}
 }
