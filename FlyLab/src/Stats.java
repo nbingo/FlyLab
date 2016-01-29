@@ -7,8 +7,10 @@ public class Stats {
 	 * @param expected a list of expected values corresponding to the observed values
 	 * @return the chi^2 test of the given observed and expected values
 	 */
-	public static double chiSquared(double[] observed, double[] expected)
+	public static double chiSquared(double[] observed, double[] expected) throws IllegalArgumentException
 	{
+		if(observed.length != expected.length)
+			throw new IllegalArgumentException();
 		int sum = 0;
 		for (int i = 0; i < observed.length; i++)
 			sum += singleChiSquared(observed[i], expected[i]);
