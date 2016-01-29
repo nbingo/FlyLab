@@ -10,7 +10,7 @@ public class Stats {
 	public static double chiSquared(double[] observed, double[] expected) throws IllegalArgumentException
 	{
 		if(observed.length != expected.length)
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("The dimensions of the observed and expected arrays do not match.");
 		int sum = 0;
 		for (int i = 0; i < observed.length; i++)
 			sum += singleChiSquared(observed[i], expected[i]);
