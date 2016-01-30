@@ -33,18 +33,29 @@ public class Fly
 	 * @param wAngle Angle of wings
 	 * @param g Gender (as in XX or XY)
 	 */
-	public Fly (Bristle[] b, Color[] eyeC, Color[] bodyC, Antenna[] a, EyeShape[] eye, WingSize[] wSize, WingShape[] wShape, WingVein[] wVein, WingAngle[] wAngle, Gender[] g)
+	public Fly (
+			Bristle  [] b     , 
+			Color    [] eyeC  , 
+			Color    [] bodyC , 
+			Antenna  [] a     , 
+			EyeShape [] eye   , 
+			WingSize [] wSize , 
+			WingShape[] wShape, 
+			WingVein [] wVein , 
+			WingAngle[] wAngle, 
+			Gender   [] g
+			)
 	{
-		bristle   = b;
-		eyeColor  = eyeC;
-		bodyColor = bodyC;
-		antenna   = a;
-		eyeShape  = eye;
-		wingSize  = wSize;
+		bristle   = b     ;
+		eyeColor  = eyeC  ;
+		bodyColor = bodyC ;
+		antenna   = a     ;
+		eyeShape  = eye   ;
+		wingSize  = wSize ;
 		wingShape = wShape;
-		wingVein  = wVein;
+		wingVein  = wVein ;
 		wingAngle = wAngle;
-		gender    = g;
+		gender    = g     ;
 	}
 	
 	/**
